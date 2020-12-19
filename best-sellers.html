@@ -4,6 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Css for Cube-->
+    <link rel="stylesheet" href="best-sellers.css">
+
 <link rel="stylesheet" href="additional.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -11,6 +14,8 @@
     <!--Google's additional Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<!--Import Swiper js-->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <title>Kool Kicks</title>
   </head>
@@ -54,8 +59,54 @@
       <h1 class="display-1 text-center">Our Best Sellers</h1>
     <hr>  
     </div>
-      
+      <section>
+ <!-- Swiper -->
+ <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/shoe 1.jpg">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="images/shoe 2.jpg">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/shoe 1.jpg">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/shoe 1.jpg">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/shoe 1.jpg">
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+
+      </section>
+      <!-- Swiper JS -->
+   <script src="../package/swiper-bundle.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
  
+  
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper('.swiper-container', {
+       effect: 'cube',
+       grabCursor: true,
+       cubeEffect: {
+         shadow: true,
+         slideShadows: true,
+         shadowOffset: 20,
+         shadowScale: 0.94,
+       },
+       pagination: {
+         el: '.swiper-pagination',
+       },
+     });
+   </script>
   </body>
 </html>
