@@ -11,7 +11,13 @@
     <!--Google's additional Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-
+<style>
+  a{
+    text-decoration: none;
+    color:black;
+  }
+ 
+</style>
     <title>Kool Kicks</title>
   </head>
   <body>
@@ -61,8 +67,8 @@
         <h1 class="display-4 fw-normal">Our Latest and Greatest</h1>
         <p class="lead fw-normal">Search for your favourite sneakers here</p>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="eg. Nike Air Jordan 1" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">Search</button>
+          <input class="form-control me-2" type="text" placeholder="eg. Nike Air Jordan 1" aria-label="Search" id="shoeSearch">
+          <button class="btn btn-outline-dark" type="submit" >Search</button>
         </form>
       </div>
       <hr>
@@ -73,7 +79,7 @@
         <div class="card">
           <img src="images/product shoe 1.png" class="card-img-top" alt="..." height="350vh" width="100%">
           <div class="card-body">
-            <h5 class="card-title">Converse All Star</h5>
+            <h5 class="card-title"><a href="#">Converse All Star</a></h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
            <p>$19.99</p>
             <a href="#" class="btn btn-outline-dark">Buy Now</a>
@@ -167,7 +173,7 @@
   </main>
 </section>
 
-
+<script src="js/products.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
       </body>
       </html>
