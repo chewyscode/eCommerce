@@ -4,7 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Css for Cube-->
+   <!--Import Swiper JS-->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!--Css for Cube-->
     <link rel="stylesheet" href="best-sellers.css">
 
 <link rel="stylesheet" href="additional.css">
@@ -14,8 +17,7 @@
     <!--Google's additional Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-<!--Import Swiper js-->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
     <title>Kool Kicks</title>
   </head>
@@ -59,10 +61,64 @@
       <h1 class="display-1 text-center">Our Best Sellers</h1>
     <hr>  
     </div>
+     <section>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 1.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 2.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 3.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 4.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 5.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 6.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 7.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 8.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 9.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/best sellers/shoe 10.jpg" class="responsive-img" width="100%" height="100%">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
       
+     </section> 
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
- 
-  
-  
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
   </body>
 </html>
